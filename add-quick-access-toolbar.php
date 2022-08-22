@@ -191,6 +191,13 @@ function add_toolbar_items($admin_bar){
 		'href'  => '/wp-admin/plugin-install.php', // URL
 		'meta'  => array(
 		),
+	));	
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'WP Pusher Plugins', // Your submenu title
+		'href'  => '/wp-admin/admin.php?page=wppusher-plugins', // URL
+		'meta'  => array(
+		),
 	));		
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
