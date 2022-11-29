@@ -16,7 +16,7 @@ add_action('admin_bar_menu', 'add_toolbar_items', 100);
 function add_toolbar_items($admin_bar){
 	$admin_bar->add_menu( array(
 		'id'    => 'my-item',
-		'title' => 'Quick Access', // Your menu title
+		'title' => 'PFS QA', // Your menu title
 		'href'  => '', // URL
 		'meta'  => array(
 		 'target' => '_blank',
