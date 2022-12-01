@@ -21,13 +21,6 @@ function add_toolbar_items($admin_bar){
 		'meta'  => array(
 		 'target' => '_blank',
 		),
-	));
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'MP Courses', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_type=mpcs-course', // URL
-		'meta'  => array(
-		),
 	));	
   // Submenus	
 	$admin_bar->add_menu( array(
@@ -72,11 +65,10 @@ function add_toolbar_items($admin_bar){
 		'meta'  => array(
 		),
 	));
-  // Submenus
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'MP Quizzes', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_type=mpcs-quiz', // URL
+		'title' => 'MP Courses', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_type=mpcs-course', // URL
 		'meta'  => array(
 		),
 	));
