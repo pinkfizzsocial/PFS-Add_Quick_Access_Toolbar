@@ -29,7 +29,42 @@ function add_toolbar_items($admin_bar){
 		'meta'  => array(
 		),
 	));	
-  // Submenus
+  // Submenus	
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Woo Orders', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_type=shop_order', // URL
+		'meta'  => array(
+		),
+	));	
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Woo Products', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_type=product', // URL
+		'meta'  => array(
+		),
+	));	
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Woo Export Orders', // Your submenu title
+		'href'  => '/wp-admin/admin.php?page=wc-order-export#segment=common', // URL
+		'meta'  => array(
+		),
+	));	
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Woo Subscriptions', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_type=shop_subscription', // URL
+		'meta'  => array(
+		),
+	));	
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Woo Automate Workflows', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_type=aw_workflow', // URL
+		'meta'  => array(
+		),
+	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
 		'title' => 'MP Lessons', // Your submenu title
@@ -75,13 +110,6 @@ function add_toolbar_items($admin_bar){
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'MP Subscriptions', // Your submenu title
-		'href'  => '/wp-admin/admin.php?page=memberpress-subscriptions', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
 		'title' => 'MP Transactions', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=memberpress-trans', // URL
 		'meta'  => array(
@@ -91,41 +119,6 @@ function add_toolbar_items($admin_bar){
 		'parent' => 'my-item',
 		'title' => 'MP Reports', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=memberpress-reports', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'Woo Orders', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_type=shop_order', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'Woo Products', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_type=product', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'Woo Export Orders', // Your submenu title
-		'href'  => '/wp-admin/admin.php?page=wc-order-export#segment=common', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'Woo Subscriptions', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_type=shop_subscription', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'Woo Automate Workflows', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_type=aw_workflow', // URL
 		'meta'  => array(
 		),
 	));	
