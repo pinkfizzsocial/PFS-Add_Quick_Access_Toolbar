@@ -60,6 +60,35 @@ function add_toolbar_items($admin_bar){
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
+		'title' => 'Pages - All', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_type=page', // URL
+		'meta'  => array(
+		),
+	));	
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Pages - Published', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_status=publish&post_type=page', // URL
+		'meta'  => array(
+		),
+	));
+
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Pages - Scheduled', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_status=future&post_type=page', // URL
+		'meta'  => array(
+		),
+	));
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Pages - Drafts', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_status=draft&post_type=page', // URL
+		'meta'  => array(
+		),
+	));
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
 		'title' => 'MP Lessons', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=mpcs-lesson', // URL
 		'meta'  => array(
@@ -156,35 +185,6 @@ function add_toolbar_items($admin_bar){
 		'meta'  => array(
 		),
 	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'Pages - All', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_type=page', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'Pages - Published', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_status=publish&post_type=page', // URL
-		'meta'  => array(
-		),
-	));
-
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'Pages - Scheduled', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_status=future&post_type=page', // URL
-		'meta'  => array(
-		),
-	));
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'Pages - Drafts', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_status=draft&post_type=page', // URL
-		'meta'  => array(
-		),
-	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
 		'title' => 'Plugins', // Your submenu title
