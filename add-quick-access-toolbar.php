@@ -180,13 +180,6 @@ function add_toolbar_items($admin_bar){
 	));		
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Menus', // Your submenu title
-		'href'  => '/wp-admin/nav-menus.php', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
 		'title' => 'Plugins', // Your submenu title
 		'href'  => '/wp-admin/plugins.php', // URL
 		'meta'  => array(
