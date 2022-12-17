@@ -163,6 +163,13 @@ function add_toolbar_items($admin_bar){
 		'href'  => '/wp-admin/edit.php?post_type=e-landing-page', // URL
 		'meta'  => array(
 		),
+	));	
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Menus', // Your submenu title
+		'href'  => '/wp-admin/nav-menus.php', // URL
+		'meta'  => array(
+		),
 	));		
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
