@@ -53,6 +53,13 @@ function add_toolbar_items($admin_bar){
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
+		'title' => 'Woo Export Orders-RoyalMail', // Your submenu title
+		'href'  => '/wp-admin/admin.php?page=wc-order-export&tab=profiles&wc_oe=edit_profile&profile_id=3', // URL
+		'meta'  => array(
+		),
+	));
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
 		'title' => 'Woo Subscriptions', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=shop_subscription', // URL
 		'meta'  => array(
