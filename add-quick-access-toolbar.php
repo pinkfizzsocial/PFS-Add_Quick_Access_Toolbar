@@ -198,6 +198,13 @@ function add_toolbar_items($admin_bar){
 		'href'  => '/wp-admin/users.php', // URL
 		'meta'  => array(
 		),
+	));
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'Affiliates', // Your submenu title
+		'href'  => '/wp-admin/admin.php?page=yith_wcaf_panel&tab=affiliates&sub_tab=affiliates-list', // URL
+		'meta'  => array(
+		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
