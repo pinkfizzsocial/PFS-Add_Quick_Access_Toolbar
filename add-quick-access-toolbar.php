@@ -111,14 +111,14 @@ function add_toolbar_items($admin_bar){
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
 		'title' => 'Pages - SIL2024', // Your submenu title
-		'href'  => '/wp-admin/edit.php?s&post_status=publish&post_type=page&action=-1&m=0&cat=176&seo_filter&readability_filter&filter_action=Filter&paged=1&action2=-1', // URL
+		'href'  => '/wp-admin/edit.php?s&post_status=publish&post_type=page&action=-1&m=0&cat=161&seo_filter&readability_filter&filter_action=Filter&paged=1&action2=-1', // URL
 		'meta'  => array(
 		),
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
 		'title' => 'Pages - SIL2025', // Your submenu title
-		'href'  => '/wp-admin/edit.php?s&post_status=publish&post_type=page&action=-1&m=0&cat=161&seo_filter&readability_filter&filter_action=Filter&paged=1&action2=-1', // URL
+		'href'  => '/wp-admin/edit.php?s&post_status=publish&post_type=page&action=-1&m=0&cat=176&seo_filter&readability_filter&filter_action=Filter&paged=1&action2=-1', // URL
 		'meta'  => array(
 		),
 	));
