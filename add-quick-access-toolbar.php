@@ -2,7 +2,7 @@
 /*
 * Plugin Name: PFS-Add Quick Access Toolbar
 * Description: This plugin will add a quick access Toolbar to the Admin Bar
-* Version: 1.0.7
+* Version: 1.0.8
 * Author: Pink Fizz Social
 * Author URI: http://pinkfizz.social
 * License: GPL2
@@ -243,14 +243,14 @@ function add_toolbar_items($admin_bar){
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'WPForms - Forms', // Your submenu title
+		'title' => 'WPForms Forms', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=wpforms-overview', // URL
 		'meta'  => array(
 		),
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'WPForms - Entries', // Your submenu title
+		'title' => 'WPForms Entries', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=wpforms-entries', // URL
 		'meta'  => array(
 		),
