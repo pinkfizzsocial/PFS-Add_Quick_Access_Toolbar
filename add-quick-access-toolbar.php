@@ -2,7 +2,7 @@
 /*
 * Plugin Name: PFS-Add Quick Access Toolbar
 * Description: This plugin will add a quick access Toolbar to the Admin Bar
-* Version: 1.0.6
+* Version: 1.0.7
 * Author: Pink Fizz Social
 * Author URI: http://pinkfizz.social
 * License: GPL2
