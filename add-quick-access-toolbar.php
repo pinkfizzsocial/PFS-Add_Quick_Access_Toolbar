@@ -25,70 +25,70 @@ function add_toolbar_items($admin_bar){
   // Submenus	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Woo Orders', // Your submenu title
+		'title' => 'Woo - Orders', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=shop_order', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Woo Products', // Your submenu title
+		'title' => 'Woo - Products', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=product', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Woo Export Orders', // Your submenu title
+		'title' => 'Woo - Export Orders', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=wc-order-export#segment=common', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Woo Export Orders-Profiles', // Your submenu title
+		'title' => 'Woo - Export Orders-Profiles', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=wc-order-export&tab=profiles', // URL
 		'meta'  => array(
 		),
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Woo Export Orders-RoyalMail', // Your submenu title
+		'title' => 'Woo - Export Orders-RoyalMail', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=wc-order-export&tab=profiles&wc_oe=edit_profile&profile_id=3', // URL
 		'meta'  => array(
 		),
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Woo Subscriptions', // Your submenu title
+		'title' => 'Woo - Subscriptions', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=shop_subscription', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Woo Automate Workflows', // Your submenu title
+		'title' => 'Woo - Automate Workflows', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=aw_workflow', // URL
 		'meta'  => array(
 		),
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Woo Coupons', // Your submenu title
+		'title' => 'Woo - Coupons', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=shop_coupon', // URL
 		'meta'  => array(
 		),
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'SUMO Overdue', // Your submenu title
+		'title' => 'SUMO - Overdue', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_status=_sumo_pp_overdue&post_type=sumo_pp_payments', // URL
 		'meta'  => array(
 		),
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'SUMO In Progress', // Your submenu title
+		'title' => 'SUMO - In Progress', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_status=_sumo_pp_in_progress&post_type=sumo_pp_payments', // URL
 		'meta'  => array(
 		),
@@ -152,63 +152,63 @@ function add_toolbar_items($admin_bar){
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'MP Memberships', // Your submenu title
+		'title' => 'MP - Memberships', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=memberpressproduct', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'MP Rules', // Your submenu title
+		'title' => 'MP - Rules', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=memberpressrule', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'MP Downloads', // Your submenu title
+		'title' => 'MP - Downloads', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=mpdl-file', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'MP Settings', // Your submenu title
+		'title' => 'MP - Settings', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=memberpress-options#mepr-license', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'MP Transactions', // Your submenu title
+		'title' => 'MP - Transactions', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=memberpress-trans', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'MP Reports', // Your submenu title
+		'title' => 'MP - Reports', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=memberpress-reports', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Elementor Templates', // Your submenu title
+		'title' => 'Elementor - Templates', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=elementor_library&tabs_group=library', // URL
 		'meta'  => array(
 		),
 	));	
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Elementor Theme Builder', // Your submenu title
+		'title' => 'Elementor - Theme Builder', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=elementor-app&ver=3.6.7#/site-editor/templates', // URL
 		'meta'  => array(
 		),
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'Elementor Landing Pages', // Your submenu title
+		'title' => 'Elementor - Landing Pages', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=e-landing-page', // URL
 		'meta'  => array(
 		),
