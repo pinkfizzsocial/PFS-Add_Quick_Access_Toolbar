@@ -250,8 +250,15 @@ function add_toolbar_items($admin_bar){
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'WPForms Entries', // Your submenu title
-		'href'  => '/wp-admin/admin.php?page=wpforms-entries', // URL
+		'title' => 'SUMO Overdue', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_status=_sumo_pp_overdue&post_type=sumo_pp_payments', // URL
+		'meta'  => array(
+		),
+	));
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'SUMO In Progress', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_status=_sumo_pp_in_progress&post_type=sumo_pp_payments', // URL
 		'meta'  => array(
 		),
 	));
