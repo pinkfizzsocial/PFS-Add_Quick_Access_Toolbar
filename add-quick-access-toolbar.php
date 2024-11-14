@@ -2,7 +2,7 @@
 /*
 * Plugin Name: PFS-Add Quick Access Toolbar
 * Description: This plugin will add a quick access Toolbar to the Admin Bar
-* Version: 1.0.9
+* Version: 1.0.10
 * Author: Pink Fizz Social
 * Author URI: http://pinkfizz.social
 * License: GPL2
@@ -76,6 +76,20 @@ function add_toolbar_items($admin_bar){
 		'parent' => 'my-item',
 		'title' => 'Woo Coupons', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=shop_coupon', // URL
+		'meta'  => array(
+		),
+	));
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'SUMO Overdue', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_status=_sumo_pp_overdue&post_type=sumo_pp_payments', // URL
+		'meta'  => array(
+		),
+	));
+	$admin_bar->add_menu( array(
+		'parent' => 'my-item',
+		'title' => 'SUMO In Progress', // Your submenu title
+		'href'  => '/wp-admin/edit.php?post_status=_sumo_pp_in_progress&post_type=sumo_pp_payments', // URL
 		'meta'  => array(
 		),
 	));
@@ -245,20 +259,6 @@ function add_toolbar_items($admin_bar){
 		'parent' => 'my-item',
 		'title' => 'WPForms Forms', // Your submenu title
 		'href'  => '/wp-admin/admin.php?page=wpforms-overview', // URL
-		'meta'  => array(
-		),
-	));
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'SUMO Overdue', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_status=_sumo_pp_overdue&post_type=sumo_pp_payments', // URL
-		'meta'  => array(
-		),
-	));
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'SUMO In Progress', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_status=_sumo_pp_in_progress&post_type=sumo_pp_payments', // URL
 		'meta'  => array(
 		),
 	));
