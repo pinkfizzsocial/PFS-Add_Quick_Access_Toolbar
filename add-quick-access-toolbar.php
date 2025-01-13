@@ -145,20 +145,6 @@ function add_toolbar_items($admin_bar){
 	));
 	$admin_bar->add_menu( array(
 		'parent' => 'my-item',
-		'title' => 'MP Courses', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_type=mpcs-course', // URL
-		'meta'  => array(
-		),
-	));
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'MP - Memberships', // Your submenu title
-		'href'  => '/wp-admin/edit.php?post_type=memberpressproduct', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
 		'title' => 'MP - Rules', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=memberpressrule', // URL
 		'meta'  => array(
@@ -168,27 +154,6 @@ function add_toolbar_items($admin_bar){
 		'parent' => 'my-item',
 		'title' => 'MP - Downloads', // Your submenu title
 		'href'  => '/wp-admin/edit.php?post_type=mpdl-file', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'MP - Settings', // Your submenu title
-		'href'  => '/wp-admin/admin.php?page=memberpress-options#mepr-license', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'MP - Transactions', // Your submenu title
-		'href'  => '/wp-admin/admin.php?page=memberpress-trans', // URL
-		'meta'  => array(
-		),
-	));	
-	$admin_bar->add_menu( array(
-		'parent' => 'my-item',
-		'title' => 'MP - Reports', // Your submenu title
-		'href'  => '/wp-admin/admin.php?page=memberpress-reports', // URL
 		'meta'  => array(
 		),
 	));	
